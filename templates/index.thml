@@ -1,0 +1,65 @@
+html
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>家庭物品清单</title>
+
+</head>
+
+<body>
+
+家庭物品清单
+
+<a href="{{ url_for('add') }}">添加新物品</a>
+
+<table border="1">
+
+<tr>
+
+<th>名称</th>
+
+<th>分类</th>
+
+<th>数量</th>
+
+<th>位置</th>
+
+<th>操作</th>
+
+</tr>
+
+{% for item in items %}
+
+<tr>
+
+<td>{{ item[1] }}</td>
+
+<td>{{ item[2] }}</td>
+
+<td>{{ item[3] }}</td>
+
+<td>{{ item[4] }}</td>
+
+<td>
+
+<a href="{{ url_for('edit', id=item[0]) }}">编辑</a>
+
+<a href="{{ url_for('delete', id=item[0]) }}">删除</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+
+</html>
