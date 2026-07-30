@@ -1,0 +1,43 @@
+html
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>编辑物品</title>
+
+</head>
+
+<body>
+
+编辑物品
+
+<form method="POST">
+
+{{ form.hidden_tag() }}
+
+{{ form.name.label }}
+{{ form.name(size=32) }}
+
+{{ form.category.label }}
+{{ form.category(size=32) }}
+
+{{ form.quantity.label }}
+{{ form.quantity() }}
+
+{{ form.location.label }}
+{{ form.location(size=32) }}
+
+{{ form.submit() }}
+
+</form>
+
+<a href="{{ url_for('index') }}">返回首页</a>
+
+</body>
+
+</html>
