@@ -1,2 +1,22 @@
-# Home-Repository
-Home-Repository
+markdown
+
+家庭物品管理系统 (Home Inventory)
+
+一个基于 Flask 的家庭物品清单管理项目，支持物品的添加、查看、编辑和删除功能。
+
+功能特性
+
+  ◦ 查看家庭物品列表（名称、分类、数量、位置）
+
+  ◦ 添加新物品
+
+  ◦ 编辑已有物品信息
+
+  ◦ 删除物品
+
+技术栈
+
+  ◦ 后端：Flask (Python)
+
+  ◦ 数据库：SQLite
+
